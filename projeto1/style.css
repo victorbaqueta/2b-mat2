@@ -3,20 +3,23 @@
 ;root {
    --cor-principa: #06182d;
    --cor-secundária: #e80d0d;
-   --cor-terciaria: #205f90;
+   --cor-destaque: #205f90;
 }
 
+body {
 
-
-
-
-
-
-
-
-
-
-
-.body{
+      font-family:"Edu VIC WA NT Hand", cursive;
       background-color: rgb(125, 125, 226);
 }
+
+
+
+
+
+
+
+
+
+
+
+      background-color: rgb(125, 125, 226);

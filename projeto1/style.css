@@ -12,7 +12,7 @@
       background-color: rgb(125, 125, 226);
 }
 
-.h1 {
+.h1, h2 {
       color: var(--cor-secundária);
       font-weight: 800,
 }

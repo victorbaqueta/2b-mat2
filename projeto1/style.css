@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&display=swap');
+
+;root {
+   --cor-principa: #06182d;
+   --cor-secundária: #e80d0d;
+   --cor-terciaria: #205f90;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .body{
       background-color: rgb(125, 125, 226);
 }

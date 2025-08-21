@@ -34,7 +34,7 @@ footer p {
   }
 
   .card:hover .card__content{
-    transform: rotate(180deg) ;
+    transform: rotateY(180deg) ;
 
   }
 

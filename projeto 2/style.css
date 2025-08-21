@@ -56,6 +56,7 @@ footer p {
      position: absolute;
      border-radius: 0.6rem;
      font-size: 1.5vw ;
+     backface-visibility: hidden ;
    }
 
    .card__content__question p {

@@ -1,3 +1,11 @@
+:root {
+   --text-color:rgb(220, 57, 57);
+   --card-front-color:rgb(53, 197, 110);
+   --card-back-color:rgb(4, 57, 248);
+}
+:root {
+
+}
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');{
   font-family: "PT Serif", serif;
   font-weight: 400;

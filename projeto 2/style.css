@@ -77,5 +77,5 @@ footer p {
     }
      
     .card__content__answer{
-      transform:rotateY(180deg)
+      transform:rotateY(180deg);
     }

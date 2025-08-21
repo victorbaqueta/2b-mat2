@@ -46,6 +46,14 @@ footer p {
     transition: transform 400ms ease-in-out;
   }
      
+     .card__content p{
+      margin-top: 2rem;
+      padding: 3rem;
+      margin-top: 4rem;
+
+     }
+
+     
    .card__content h3 {
      color:var(--text-color);
      border:1px solid var(--text-color) ;
@@ -73,6 +81,9 @@ footer p {
     .card__content__answer,
     .card__content__question{
      backface-visibility: hidden;
+     position: absolute;
+     height: 100% ;
+     width: 100% ;
 
     }
      

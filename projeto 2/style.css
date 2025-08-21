@@ -69,3 +69,9 @@ footer p {
     color: var(--card-back-color);
     font-weight: 500;
    }
+    
+    .card__content__answer,
+    .card__content__question{
+     backface-visibility: hidden;
+
+    }

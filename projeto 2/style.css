@@ -39,11 +39,11 @@ footer p {
   }
 
   .card__content {
-    margin: 1rem ;
     background-color:var(--card-front-color);
     height: 100% ;
     transform-style: preserve-3d;
     transition: transform 400ms ease-in-out;
+    text-align: center;
   }
      
      .card__content p{
@@ -60,7 +60,6 @@ footer p {
      text-align: left;
      padding: 0.6rem;
      margin: 0.5rem;
-     background-color: blue;
      position: absolute;
      border-radius: 0.6rem;
      font-size: 1.5vw ;
@@ -81,7 +80,7 @@ footer p {
     .card__content__answer,
     .card__content__question{
      backface-visibility: hidden;
-     
+     position: absolute;
      height: 100% ;
      width: 100% ;
 

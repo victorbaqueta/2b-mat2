@@ -10,6 +10,11 @@
   font-style: normal;
 }
 
+body{
+   background: url(img/pelotas.jpg);
+   font-family:"PT Serif", serif;
+}
+
 #container {
     display: flex; 
 }

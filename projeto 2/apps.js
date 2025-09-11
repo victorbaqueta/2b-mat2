@@ -11,9 +11,7 @@ function criaCartao(categoria, pergunta, resposta) {
                     <div class="cartao__conteudo__resposta">
                        <p>A principal diferença é o número de corcovas: o camelo tem duas corcovas, enquanto o dromedário tem apenas uma. </p>
                     </div>
-                </div>`
-
-
-
+                </div>
+                `
                 container.appendChild(cartao)
 }

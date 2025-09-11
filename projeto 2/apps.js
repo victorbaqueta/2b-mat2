@@ -1,6 +1,6 @@
 function criaCartao(categoria, pergunta, resposta){ 
 
-console.log(categoria ,pergunta, respostas)
+    console.log(categoria ,pergunta, respostas)
 
 
 }

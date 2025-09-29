@@ -36,18 +36,18 @@ criaCartao(
 
 criaCartao(
   'animais',
-   'O que torna um animal mamífero?',
-   'Um mamífero é caracterizado principalmente por ter pelos no corpo e pela capacidade de produzir leite através de glândulas mamárias para alimentar seus filhotes.'
+   'Qual é o único animal capaz de ver a luz polarizada?',
+   'O camarão mantis,ele tem um dos sistemas de visão mais complexos do mundo animal.'
 )
 
 criaCartao(
-   'animais',
-   'Qual a principal diferença entre um Camelo e o Dromedário?',
-   'A principal diferença é o número de corcovas: o camelo tem duas corcovas, enquanto o dromedário tem apenas uma.'
+   'Curiosidade climática',
+   'Qual lugar choveu durante dois anos sem parar?',
+   'Em Mawsynram, na Índia, considerado o lugar mais chuvoso do mundo. Lá há períodos com chuva praticamente todos os dias durante anos seguidos.'
 )
 
 criaCartao(
-  'pessoas',
-   'Por que os idosos diminuem de tamanho?',
-    'Os idosos perdem altura principalmente porque os discos intervertebrais da coluna se achatam e perdem fluidos, e a massa óssea e muscular diminui, o que causa encolhimento. '
+  'Metal',
+   'Qual o metal mais caro do mundo atualmente?',
+    'Ródio (Rh). Vale mais do que o ouro e platina porque é raro e usado em catalisadores de carros e em joias. '
 )

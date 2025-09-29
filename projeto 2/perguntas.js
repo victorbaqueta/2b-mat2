@@ -25,7 +25,7 @@ criaCartao(
 criaCartao(
   'metal',
    'Qual o único metal que é líquido em temperatura ambiente?',
-    'Mercúrio. '
+    'Mercúrio, ele é famoso por estar no estado líquido no termômetro, é líquido em temperatura ambiente (aprox.25ºC). '
 )
 
 criaCartao(

@@ -1,273 +1,1023 @@
-< !DOCTYPE html><html lang="pt-BR"><head>< !-- Permite o uso correto de acentos e caracteres especiais --><meta charset="UTF-8">< !-- Faz o site se adaptar ao tamanho da tela do celular --><meta name="viewport" content="width=device-width, initial-scale=1.0">< !-- Título que aparece na aba do navegador --><title>Comida sem Desperdício</title><style>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-/* Remove espaços automáticos colocados pelo navegador */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<head>
+    <meta charset="UTF-8">
 
-/* Configurações gerais da página */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f7f4;
-    color: #333;
-    line-height: 1.6;
-}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-/* Cabeçalho do site */
-header {
-    background-color: #247a45;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
+    <title>Meu Dinheiro - Organizador Financeiro</title>
 
-/* Menu de navegação */
-nav {
-    margin-top: 15px;
-}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-/* Links do menu */
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
-}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f4;
+            color: #333;
+            line-height: 1.6;
+        }
 
-/* Efeito quando o mouse passa sobre o link */
-nav a:hover {
-    text-decoration: underline;
-}
+        /* CABEÇALHO */
 
-/* Área principal de apresentação */
-.inicio {
-    min-height: 420px;
-    padding: 80px 20px;
-    text-align: center;
-    background-color: #dff2e5;
-}
+        header {
+            background-color: #247a45;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
 
-.inicio h2 {
-    font-size: 38px;
-    margin-bottom: 20px;
-    color: #195e35;
-}
+        header h1 {
+            margin-bottom: 5px;
+        }
 
-.inicio p {
-    max-width: 700px;
-    margin: auto;
-    font-size: 18px;
-}
+        nav {
+            margin-top: 15px;
+        }
 
-/* Botão principal */
-.botao {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 12px 25px;
-    background-color: #247a45;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-}
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
 
-.botao:hover {
-    background-color: #195e35;
-}
+        nav a:hover {
+            text-decoration: underline;
+        }
 
-/* Configuração das seções */
-section {
-    padding: 60px 20px;
-}
+        /* ÁREA INICIAL */
 
-/* Limita a largura do conteúdo em telas grandes */
-.conteudo {
-    max-width: 1100px;
-    margin: auto;
-}
+        .inicio {
+            min-height: 350px;
+            padding: 70px 20px;
+            text-align: center;
+            background-color: #dff2e5;
+        }
 
-/* Títulos das seções */
-section h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #195e35;
-}
+        .inicio h2 {
+            font-size: 38px;
+            margin-bottom: 20px;
+            color: #195e35;
+        }
 
-/* Área que organiza os cartões */
-.cartoes {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
+        .inicio p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 18px;
+        }
 
-/* Cada cartão de informação */
-.cartao {
-    background-color: white;
-    width: 30%;
-    min-width: 250px;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
+        .botao {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background-color: #247a45;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
 
-.cartao h3 {
-    color: #247a45;
-    margin-bottom: 15px;
-}
+        .botao:hover {
+            background-color: #195e35;
+        }
 
-/* Formulário para cadastrar uma doação */
-form {
-    max-width: 600px;
-    margin: auto;
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-}
+        /* SEÇÕES */
 
-/* Textos que identificam os campos */
-label {
-    display: block;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
+        section {
+            padding: 60px 20px;
+        }
 
-/* Campos de texto, seleção e área de mensagem */
-input,
-select,
-textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #aaa;
-    border-radius: 5px;
-    font-size: 16px;
-}
+        .conteudo {
+            max-width: 1100px;
+            margin: auto;
+        }
 
-textarea {
-    height: 100px;
-    resize: vertical;
-}
+        section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #195e35;
+        }
 
-/* Mensagem que aparece após o cadastro */
-#mensagem {
-    margin-top: 20px;
-    font-weight: bold;
-    color: #247a45;
-    text-align: center;
-}
+        /* CARDS */
 
-/* Rodapé */
-footer {
-    background-color: #174f2e;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
+        .cartoes {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
 
-/*
-        MEDIA QUERY
+        .cartao {
+            background-color: white;
+            width: 30%;
+            min-width: 250px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
 
-        Estas regras serão aplicadas quando a tela tiver
-        no máximo 768 pixels de largura, como em celulares.
-        */
-@media (max-width: 768px) {
+        .cartao h3 {
+            color: #247a45;
+            margin-bottom: 15px;
+        }
 
-    header h1 {
-        font-size: 25px;
-    }
+        /* RESUMO FINANCEIRO */
 
-    /* Coloca os links do menu um abaixo do outro */
-    nav a {
-        display: block;
-        margin: 10px;
-    }
+        .resumo {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
 
-    .inicio {
-        padding: 50px 20px;
-    }
+        .resumo-card {
+            background-color: white;
+            width: 30%;
+            min-width: 220px;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
 
-    .inicio h2 {
-        font-size: 28px;
-    }
+        .resumo-card h3 {
+            margin-bottom: 10px;
+        }
 
-    /* Faz cada cartão ocupar toda a largura disponível */
-    .cartao {
-        width: 100%;
-    }
+        .receita {
+            color: #16803c;
+        }
 
-    section {
-        padding: 40px 15px;
-    }
+        .despesa {
+            color: #d62828;
+        }
 
-    form {
-        padding: 20px;
-    }
-}
+        .saldo {
+            color: #195e35;
+        }
 
-</style></head><body>< !-- Cabeçalho com o nome do projeto e menu --><header><h1>Comida sem Desperdício</h1><nav><a href="#inicio">Início</a><a href="#problema">O problema</a><a href="#solucao">Solução</a><a href="#cadastro">Cadastrar doação</a></nav></header>< !-- Primeira área visualizada pelo usuário --><main><section class="inicio" id="inicio"><div class="conteudo"><h2>Doe alimentos. Combata o desperdício.</h2><p>Nosso projeto conecta pessoas e estabelecimentos que possuem alimentos disponíveis com instituições que ajudam famílias em situação de vulnerabilidade. </p><a href="#cadastro" class="botao">Quero fazer uma doação </a></div></section>< !-- Seção que apresenta o problema social --><section id="problema"><div class="conteudo"><h2>Qual problema queremos resolver?</h2><div class="cartoes"><div class="cartao"><h3>Desperdício</h3><p>Muitos alimentos em boas condições são descartados por mercados,
-restaurantes e residências. </p></div><div class="cartao"><h3>Fome</h3><p>Ao mesmo tempo,
-muitas famílias não possuem acesso regular a alimentos de qualidade. </p></div><div class="cartao"><h3>Falta de conexão</h3><p>Nem sempre quem possui alimentos para doar consegue encontrar rapidamente quem precisa recebê-los. </p></div></div></div></section>< !-- Seção que explica como o site ajuda --><section id="solucao"><div class="conteudo"><h2>Como o site pode ajudar?</h2><div class="cartoes"><div class="cartao"><h3>1. Cadastro</h3><p>O doador informa qual alimento está disponível,
-sua quantidade e o local de retirada. </p></div><div class="cartao"><h3>2. Localização</h3><p>Instituições próximas podem visualizar as doações cadastradas na região. </p></div><div class="cartao"><h3>3. Retirada</h3><p>A instituição entra em contato com o doador e organiza a retirada dos alimentos. </p></div></div></div></section>< !-- Formulário interativo --><section id="cadastro"><div class="conteudo"><h2>Cadastre uma doação</h2><form id="formulario"><label for="nome">Nome do doador:</label><input type="text"
-id="nome"
-placeholder="Digite seu nome"
-required><label for="alimento">Alimento disponível:</label><input type="text"
-id="alimento"
-placeholder="Exemplo: arroz, feijão ou frutas"
-required><label for="quantidade">Quantidade:</label><input type="text"
-id="quantidade"
-placeholder="Exemplo: 5 kg"
-required><label for="tipo">Tipo de alimento:</label><select id="tipo" required><option value="">Selecione uma opção</option><option value="Nao perecivel">Não perecível</option><option value="Frutas e verduras">Frutas e verduras</option><option value="Refeicao pronta">Refeição pronta</option><option value="Outro">Outro</option></select><label for="endereco">Local de retirada:</label><input type="text"
-id="endereco"
-placeholder="Informe o bairro ou endereço"
-required><label for="observacao">Observações:</label><textarea id="observacao"
-placeholder="Informe a validade ou outras informações"
-></textarea><button type="submit" class="botao">Cadastrar doação </button>< !-- Este parágrafo receberá a mensagem do JavaScript --><p id="mensagem"></p></form></div></section></main>< !-- Rodapé do site --><footer><p>Projeto escolar — Site responsivo para solucionar um problema social </p></footer><script>
-/*
-        Seleciona o formulário por meio do seu ID
-        e guarda o elemento na variável "formulario".
-        */
-const formulario=document.getElementById("formulario");
+        .valor {
+            font-size: 26px;
+            font-weight: bold;
+        }
 
-/*
-        Seleciona o parágrafo onde será apresentada
-        a mensagem de confirmação.
-        */
-const mensagem=document.getElementById("mensagem");
+        /* FORMULÁRIO */
 
-/*
-        O evento "submit" acontece quando o usuário
-        envia o formulário.
-        */
-formulario.addEventListener("submit", function (evento) {
+        form {
+            max-width: 600px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* LISTA DE MOVIMENTAÇÕES */
+
+        .lista {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .movimentacao {
+            background-color: white;
+            padding: 18px;
+            margin-bottom: 12px;
+            border-radius: 8px;
+            box-shadow: 0 2px 7px rgba(0, 0, 0, 0.08);
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .movimentacao-info {
+            flex: 1;
+        }
+
+        .movimentacao-info strong {
+            display: block;
+            font-size: 18px;
+        }
+
+        .movimentacao-info small {
+            color: #777;
+        }
+
+        .valor-receita {
+            color: #16803c;
+            font-weight: bold;
+        }
+
+        .valor-despesa {
+            color: #d62828;
+            font-weight: bold;
+        }
+
+        .excluir {
+            background-color: #d62828;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .excluir:hover {
+            background-color: #a91f1f;
+        }
+
+        /* MENSAGEM */
+
+        #mensagem {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #247a45;
+            text-align: center;
+        }
+
+        /* SITUAÇÃO FINANCEIRA */
+
+        .situacao {
+            max-width: 700px;
+            margin: 30px auto 0;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .situacao-positiva {
+            background-color: #dff2e5;
+            color: #195e35;
+        }
+
+        .situacao-negativa {
+            background-color: #ffe0e0;
+            color: #a91f1f;
+        }
+
+        .situacao-neutra {
+            background-color: #eeeeee;
+            color: #555;
+        }
+
+        /* RODAPÉ */
+
+        footer {
+            background-color: #174f2e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* RESPONSIVIDADE */
+
+        @media (max-width: 768px) {
+
+            header h1 {
+                font-size: 25px;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+
+            .inicio {
+                padding: 50px 20px;
+            }
+
+            .inicio h2 {
+                font-size: 28px;
+            }
+
+            .cartao,
+            .resumo-card {
+                width: 100%;
+            }
+
+            section {
+                padding: 40px 15px;
+            }
+
+            form {
+                padding: 20px;
+            }
+
+            .movimentacao {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .excluir {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <header>
+
+        <h1>💰 Meu Dinheiro</h1>
+
+        <p>Organizador Financeiro para Estudantes</p>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#dicas">Dicas</a>
+            <a href="#cadastro">Adicionar</a>
+            <a href="#movimentacoes">Movimentações</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- INÍCIO -->
+
+        <section class="inicio" id="inicio">
+
+            <div class="conteudo">
+
+                <h2>Aprenda a cuidar melhor do seu dinheiro!</h2>
+
+                <p>
+                    O Meu Dinheiro é uma ferramenta criada para ajudar
+                    estudantes a controlar seus ganhos e gastos,
+                    entender para onde o dinheiro está indo e aprender
+                    a organizar melhor sua vida financeira.
+                </p>
+
+                <a href="#cadastro" class="botao">
+                    Adicionar movimentação
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- DICAS -->
+
+        <section id="dicas">
+
+            <div class="conteudo">
+
+                <h2>Por que organizar seu dinheiro?</h2>
+
+                <div class="cartoes">
+
+                    <div class="cartao">
+
+                        <h3>📊 Controle</h3>
+
+                        <p>
+                            Saiba exatamente quanto dinheiro você recebe
+                            e quanto está gastando durante o mês.
+                        </p>
+
+                    </div>
+
+
+                    <div class="cartao">
+
+                        <h3>🎯 Planejamento</h3>
+
+                        <p>
+                            Organize seus gastos e estabeleça objetivos
+                            para economizar dinheiro.
+                        </p>
+
+                    </div>
+
+
+                    <div class="cartao">
+
+                        <h3>💡 Consciência</h3>
+
+                        <p>
+                            Entenda seus hábitos financeiros e descubra
+                            onde é possível economizar.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESUMO -->
+
+        <section id="resumo">
+
+            <div class="conteudo">
+
+                <h2>Resumo financeiro</h2>
+
+                <div class="resumo">
+
+                    <div class="resumo-card">
+
+                        <h3 class="receita">
+                            💵 Receitas
+                        </h3>
+
+                        <p class="valor receita" id="totalReceitas">
+                            R$ 0,00
+                        </p>
+
+                    </div>
+
+
+                    <div class="resumo-card">
+
+                        <h3 class="despesa">
+                            💸 Despesas
+                        </h3>
+
+                        <p class="valor despesa" id="totalDespesas">
+                            R$ 0,00
+                        </p>
+
+                    </div>
+
+
+                    <div class="resumo-card">
+
+                        <h3 class="saldo">
+                            💰 Saldo
+                        </h3>
+
+                        <p class="valor saldo" id="saldo">
+                            R$ 0,00
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div id="situacao" class="situacao situacao-neutra">
+
+                    Adicione suas movimentações para visualizar
+                    sua situação financeira.
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CADASTRO -->
+
+        <section id="cadastro">
+
+            <div class="conteudo">
+
+                <h2>Adicionar movimentação</h2>
+
+                <form id="formulario">
+
+                    <label for="descricao">
+                        Descrição:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="descricao"
+                        placeholder="Exemplo: Mesada"
+                        required
+                    >
+
+
+                    <label for="valor">
+                        Valor:
+                    </label>
+
+                    <input
+                        type="number"
+                        id="valor"
+                        placeholder="Exemplo: 100"
+                        min="0.01"
+                        step="0.01"
+                        required
+                    >
+
+
+                    <label for="tipo">
+                        Tipo:
+                    </label>
+
+                    <select id="tipo" required>
+
+                        <option value="">
+                            Selecione uma opção
+                        </option>
+
+                        <option value="receita">
+                            Receita
+                        </option>
+
+                        <option value="despesa">
+                            Despesa
+                        </option>
+
+                    </select>
+
+
+                    <label for="categoria">
+                        Categoria:
+                    </label>
+
+                    <select id="categoria" required>
+
+                        <option value="">
+                            Selecione uma categoria
+                        </option>
+
+                        <option value="Alimentação">
+                            🍔 Alimentação
+                        </option>
+
+                        <option value="Transporte">
+                            🚌 Transporte
+                        </option>
+
+                        <option value="Estudos">
+                            📚 Estudos
+                        </option>
+
+                        <option value="Lazer">
+                            🎮 Lazer
+                        </option>
+
+                        <option value="Compras">
+                            🛍️ Compras
+                        </option>
+
+                        <option value="Outros">
+                            📦 Outros
+                        </option>
+
+                    </select>
+
+
+                    <button
+                        type="submit"
+                        class="botao"
+                    >
+                        Adicionar
+                    </button>
+
+
+                    <p id="mensagem"></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- MOVIMENTAÇÕES -->
+
+        <section id="movimentacoes">
+
+            <div class="conteudo">
+
+                <h2>Minhas movimentações</h2>
+
+                <div
+                    class="lista"
+                    id="listaMovimentacoes"
+                >
+
+                    <p style="text-align:center;">
+                        Nenhuma movimentação cadastrada.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <p>
+            Projeto escolar — Organizador Financeiro para Estudantes
+        </p>
+
+        <p>
+            Aprender a cuidar do dinheiro também é aprender a planejar o futuro.
+        </p>
+
+    </footer>
+
+
+    <script>
 
         /*
-            Impede que a página seja atualizada
-            automaticamente após o envio.
-            */
-        evento.preventDefault();
+        ============================================
+        ORGANIZADOR FINANCEIRO
+        ============================================
+
+        O programa utiliza JavaScript para:
+
+        - Cadastrar receitas
+        - Cadastrar despesas
+        - Calcular o saldo
+        - Exibir as movimentações
+        - Excluir movimentações
+        - Salvar os dados no navegador
+        */
+
+
+        // Recupera os dados salvos anteriormente.
+        let movimentacoes =
+            JSON.parse(localStorage.getItem("movimentacoes")) || [];
+
+
+        // Seleciona os elementos da página.
+
+        const formulario =
+            document.getElementById("formulario");
+
+        const lista =
+            document.getElementById("listaMovimentacoes");
+
+        const mensagem =
+            document.getElementById("mensagem");
+
+        const totalReceitas =
+            document.getElementById("totalReceitas");
+
+        const totalDespesas =
+            document.getElementById("totalDespesas");
+
+        const saldo =
+            document.getElementById("saldo");
+
+        const situacao =
+            document.getElementById("situacao");
+
 
         /*
-            Pega os valores digitados nos campos.
-            */
-        const nome=document.getElementById("nome").value;
-        const alimento=document.getElementById("alimento").value;
-        const quantidade=document.getElementById("quantidade").value;
+        FORMULÁRIO
+
+        Quando o usuário enviar o formulário,
+        esta função será executada.
+        */
+
+        formulario.addEventListener("submit", function(evento) {
+
+            // Impede a página de recarregar.
+            evento.preventDefault();
+
+
+            // Pega os valores digitados.
+
+            const descricao =
+                document.getElementById("descricao").value;
+
+            const valor =
+                Number(document.getElementById("valor").value);
+
+            const tipo =
+                document.getElementById("tipo").value;
+
+            const categoria =
+                document.getElementById("categoria").value;
+
+
+            // Cria um objeto com os dados.
+
+            const novaMovimentacao = {
+
+                id: Date.now(),
+
+                descricao: descricao,
+
+                valor: valor,
+
+                tipo: tipo,
+
+                categoria: categoria
+
+            };
+
+
+            // Adiciona a movimentação à lista.
+
+            movimentacoes.push(novaMovimentacao);
+
+
+            // Salva os dados no navegador.
+
+            salvarDados();
+
+
+            // Atualiza a página.
+
+            atualizarPagina();
+
+
+            // Mostra mensagem.
+
+            mensagem.textContent =
+                "Movimentação adicionada com sucesso!";
+
+
+            // Limpa o formulário.
+
+            formulario.reset();
+
+
+            // Remove a mensagem depois de alguns segundos.
+
+            setTimeout(function() {
+
+                mensagem.textContent = "";
+
+            }, 3000);
+
+        });
+
 
         /*
-            Mostra uma mensagem personalizada na página.
-            */
-        mensagem.textContent="Obrigado, " + nome + "! A doação de " + quantidade + " de " + alimento + " foi cadastrada com sucesso.";
+        FUNÇÃO PARA SALVAR OS DADOS
+        */
+
+        function salvarDados() {
+
+            localStorage.setItem(
+                "movimentacoes",
+                JSON.stringify(movimentacoes)
+            );
+
+        }
+
 
         /*
-            Limpa os campos depois que o cadastro é realizado.
+        FUNÇÃO PARA ATUALIZAR A PÁGINA
+        */
+
+        function atualizarPagina() {
+
+            atualizarResumo();
+
+            mostrarMovimentacoes();
+
+        }
+
+
+        /*
+        CALCULA RECEITAS, DESPESAS E SALDO
+        */
+
+        function atualizarResumo() {
+
+            let receitas = 0;
+
+            let despesas = 0;
+
+
+            movimentacoes.forEach(function(item) {
+
+                if (item.tipo === "receita") {
+
+                    receitas += item.valor;
+
+                } else {
+
+                    despesas += item.valor;
+
+                }
+
+            });
+
+
+            const resultado =
+                receitas - despesas;
+
+
+            // Mostra os valores.
+
+            totalReceitas.textContent =
+                formatarMoeda(receitas);
+
+            totalDespesas.textContent =
+                formatarMoeda(despesas);
+
+            saldo.textContent =
+                formatarMoeda(resultado);
+
+
+            /*
+            Altera a mensagem de acordo
+            com a situação financeira.
             */
-        formulario.reset();
-    });
-</script></body></html>
+
+            if (resultado > 0) {
+
+                situacao.className =
+                    "situacao situacao-positiva";
+
+                situacao.textContent =
+                    "🟢 Parabéns! Você está com saldo positivo.";
+
+            }
+
+            else if (resultado < 0) {
+
+                situacao.className =
+                    "situacao situacao-negativa";
+
+                situacao.textContent =
+                    "🔴 Atenção! Seus gastos estão maiores que suas receitas.";
+
+            }
+
+            else {
+
+                situacao.className =
+                    "situacao situacao-neutra";
+
+                situacao.textContent =
+                    "⚪ Seu saldo está zerado.";
+
+            }
+
+        }
+
+
+        /*
+        MOSTRA AS MOVIMENTAÇÕES
+        */
+
+        function mostrarMovimentacoes() {
+
+            lista.innerHTML = "";
+
+
+            if (movimentacoes.length === 0) {
+
+                lista.innerHTML =
+                    '<p style="text-align:center;">Nenhuma movimentação cadastrada.</p>';
+
+                return;
+
+            }
+
+
+            movimentacoes.forEach(function(item) {
+
+                const div =
+                    document.createElement("div");
+
+                div.className =
+                    "movimentacao";
+
+
+                const classeValor =
+                    item.tipo === "receita"
+                        ? "valor-receita"
+                        : "valor-despesa";
+
+
+                const sinal =
+                    item.tipo === "receita"
+                        ? "+"
+                        : "-";
+
+
+                div.innerHTML = `
+
+                    <div class="movimentacao-info">
+
+                        <strong>
+                            ${item.descricao}
+                        </strong>
+
+                        <small>
+                            Categoria: ${item.categoria}
+                        </small>
+
+                    </div>
+
+
+                    <span class="${classeValor}">
+
+                        ${sinal}
+                        ${formatarMoeda(item.valor)}
+
+                    </span>
+
+
+                    <button
+                        class="excluir"
+                        onclick="excluirMovimentacao(${item.id})"
+                    >
+                        Excluir
+                    </button>
+
+                `;
+
+
+                lista.appendChild(div);
+
+            });
+
+        }
+
+
+        /*
+        EXCLUI UMA MOVIMENTAÇÃO
+        */
+
+        function excluirMovimentacao(id) {
+
+            movimentacoes =
+                movimentacoes.filter(function(item) {
+
+                    return item.id !== id;
+
+                });
+
+
+            salvarDados();
+
+            atualizarPagina();
+
+        }
+
+
+        /*
+        FORMATA UM NÚMERO COMO MOEDA BRASILEIRA.
+        */
+
+        function formatarMoeda(valor) {
+
+            return valor.toLocaleString(
+                "pt-BR",
+                {
+                    style: "currency",
+                    currency: "BRL"
+                }
+            );
+
+        }
+
+
+        /*
+        CARREGA OS DADOS QUANDO A PÁGINA É ABERTA.
+        */
+
+        atualizarPagina();
+
+    </script>
+
+</body>
+
+</html>
